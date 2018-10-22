@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -19,19 +19,19 @@ app.get('/', (req, res) => {
 //const db = mongoose.connection;
 
 app.get('/api/', (req, res) => {
-    res.send('Please use /api/books or /api/genres');
+    res.json({'GET request for /api/': true});
 });
 
 app.post('/api/', (req, res) => {
-
+    res.json({'POST request': true});
 });
 
 app.put('/api/', (req, res) => {
-
+    res.json({'PUT request': true});
 });
 
 app.delete('/api/', (req, res) => {
-
+    res.json({'DELETE request': true});
 });
 
 app.listen(port);
