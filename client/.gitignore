@@ -4,10 +4,6 @@
 .DS_Store
 .idea
 
-# secrets
-api/secret.js
-
-
 # dependencies
 /node_modules
 
