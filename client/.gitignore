@@ -5,7 +5,7 @@
 .idea
 
 # secrets
-**/secret.js
+api/secret.js
 
 
 # dependencies
