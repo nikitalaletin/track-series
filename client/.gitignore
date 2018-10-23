@@ -4,6 +4,10 @@
 .DS_Store
 .idea
 
+# secrets
+**/secret.js
+
+
 # dependencies
 /node_modules
 
